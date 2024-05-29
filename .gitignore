@@ -1,3 +1,9 @@
+index.android.*
+main.jsbundle.*
+.env.*
+!.env.sample
+
+
 # OSX
 #
 .DS_Store

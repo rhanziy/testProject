@@ -156,7 +156,7 @@ Make sure that all grammar rule definitions are done before 'performSelfAnalysis
 <meta charset="utf-8">
 <style>
   body {
-    background-color: hsl(30, 20%, 95%)
+    background-color: white
   }
 </style>
 

@@ -1,11 +1,10 @@
 import React from 'react';
 import {ActivityIndicator, StyleSheet, View} from 'react-native';
 
-
 const Loader = () => {
   return (
     <View style={[StyleSheet.absoluteFillObject, styles.container]}>
-      <ActivityIndicator color={'blue'} />
+      <ActivityIndicator color={'#5500cc'} />
     </View>
   );
 };

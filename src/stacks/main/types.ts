@@ -2,11 +2,13 @@ import {
   NativeStackNavigationProp,
   NativeStackScreenProps,
 } from '@react-navigation/native-stack';
-import {MainTabNavigationScreenParams} from '../../tabs/types';
 import {RouteProp} from '@react-navigation/native';
+import {AuthStackNavigationScreenParams} from '../auth/types';
+import {QnAStackNavigationScreenParams} from '../qna/types';
 
 export type MainStackParamList = {
-  MainTab: MainTabNavigationScreenParams;
+  QnAStack: QnAStackNavigationScreenParams;
+  AuthStack: AuthStackNavigationScreenParams;
 };
 
 export type MainStackNavigationProp =

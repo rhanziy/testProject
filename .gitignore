@@ -1,6 +1,8 @@
 index.android.*
 main.jsbundle.*
 .env.*
+/env
+.env
 !.env.sample
 
 

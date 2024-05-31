@@ -20,6 +20,7 @@
 		61DCC1242C02D92000B70286 /* FontAwesome6_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61DCC1112C02D92000B70286 /* FontAwesome6_Solid.ttf */; };
 		61DCC1262C02D92000B70286 /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61DCC1132C02D92000B70286 /* FontAwesome6_Brands.ttf */; };
 		61DCC1272C02D92000B70286 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61DCC1142C02D92000B70286 /* MaterialIcons.ttf */; };
+		61DCC1292C08C2F500B70286 /* main.m in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-rereTsProject-rereTsProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rereTsProject-rereTsProjectTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		9C0172B1609E417DFD4A287E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 48F8BD2C6879BFBC0DA8D80A /* PrivacyInfo.xcprivacy */; };
@@ -60,6 +61,7 @@
 		61DCC1112C02D92000B70286 /* FontAwesome6_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Solid.ttf; sourceTree = "<group>"; };
 		61DCC1132C02D92000B70286 /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
 		61DCC1142C02D92000B70286 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		61DCC1282C087A8700B70286 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rereTsProject/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-rereTsProject-rereTsProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rereTsProject-rereTsProjectTests.release.xcconfig"; path = "Target Support Files/Pods-rereTsProject-rereTsProjectTests/Pods-rereTsProject-rereTsProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -154,6 +156,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				61DCC1282C087A8700B70286 /* Config.xcconfig */,
 				13B07FAE1A68108700A75B9A /* rereTsProject */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* rereTsProjectTests */,
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				61DCC1292C08C2F500B70286 /* main.m in Resources */,
 				61DCC1212C02D92000B70286 /* FontAwesome.ttf in Resources */,
 				61DCC11A2C02D92000B70286 /* FontAwesome5_Brands.ttf in Resources */,
 				61DCC1272C02D92000B70286 /* MaterialIcons.ttf in Resources */,
@@ -310,7 +314,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n\n";
 		};
 		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -564,6 +568,7 @@
 		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DCC1282C087A8700B70286 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CC = "";
@@ -648,6 +653,7 @@
 		};
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DCC1282C087A8700B70286 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CC = "";
